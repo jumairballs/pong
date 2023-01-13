@@ -164,6 +164,19 @@ function game(){
     render();
 }
 
+document.getElementById("resetB").addEventListener("click", resetScore);
+
+function resetScore(){
+    drawArc();
+    drawRect();
+    drawNet();
+    drawText();
+    resetBall();
+
+    user.score = 0;
+    com.score = 0;
+}
+
 let framePerSecond = 50;
 
 let loop = setInterval(game,1000/framePerSecond);

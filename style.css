@@ -10,3 +10,7 @@ body{
     left: 0;
     bottom: 0;
 }
+#resetB{
+    cursor: pointer;
+    color: black;
+}
